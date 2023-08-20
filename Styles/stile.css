@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #359381;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: 359381;
+}
+
+body {
+  background: #f9f9f9;
+  overflow-x: hidden;
+}
+body header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+}
+body header .Logo {
+  font-size: 2em;
+  color: #359381;
+  pointer-events: none;
+}
+body header .Navigation {
+  margin: 40px;
+}
+body header .Navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header .Navigation ul li {
+  list-style: none;
+}
+body header .Navigation ul li a {
+  text-decoration: none;
+  color: #359381;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+body header .Navigation ul li a:hover, body header .Navigation ul li a.active {
+  background-color: #359381;
+  color: #f9f9f9;
+}
+body .parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+  overflow: hidden;
+}
+body .parallax #text {
+  position: absolute;
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+body .parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  animation: opacityImg 1s linear forwards;
+}
+@keyframes opacityImg {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body .content {
+  position: relative;
+  background: #003329;
+  padding: 100px;
+}
+body .content h2 {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+body .content p {
+  font-size: 1em;
+  font-weight: 300;
+  color: #fff;
+}
+body .content .About_Box {
+  width: 100;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .content .About_Box div {
+  width: 50%;
+}
+body .content .About_Box div:nth-child(3) {
+  flex: 3;
+}
+body .content .About_Box .Img {
+  width: 60%;
+  height: 400px;
+  background-color: rgba(28, 29, 29, 0.137254902);
+  position: relative;
+  border-radius: 15px;
+}
+body .content .About_Box .Img::before {
+  content: "";
+  position: absolute;
+  right: -15%;
+  top: -15%;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-image: url(../Images/img.png);
+  background-position: center;
+  background-size: cover;
+}
+body .content .About_Box .Text_Content div {
+  width: 100%;
+}
+body .content .About_Box .Text_Content div h2 {
+  width: 100%;
+  text-align: center;
+}
+body .content .Service_Container {
+  width: 100%;
+  height: auto;
+}
+body .content .Service_Container h2 {
+  text-align: center;
+}
+body .content .Service_Container .Service_Box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .content .Service_Container .Service_Box .Service {
+  width: 25%;
+  height: 450px;
+  border-radius: 15px;
+  background-color: red;
+  margin: 10px;
+}/*# sourceMappingURL=stile.css.map */
